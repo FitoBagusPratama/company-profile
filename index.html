@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Festival Event</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+    }
+    .hero {
+      background-image: url('https://miyalaser.com/cdn/shop/articles/MIYA-laser_show-blog-banner-img-_3.jpg?v=1726740201'); /* Ganti dengan gambar hero sesungguhnya */
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 0;
+    }
+    .hero h1 {
+      font-size: 4rem;
+      font-weight: bold;
+    }
+    .hero p {
+      font-size: 1.5rem;
+    }
+    .event-info h2 {
+      color: #ff6347;
+    }
+    .schedule .card {
+      margin: 15px 0;
+    }
+    .schedule .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    .tickets img {
+      max-width: 100%;
+      height: auto;
+    }
+    .footer {
+      background-color: #343a40;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Music Festival</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">Tentang</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#schedule">Jadwal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#tickets">Tiket</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Kontak</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Welcome to the Ultimate Music Festival</h1>
+    <p>Bergabunglah bersama kami untuk akhir pekan yang penuh dengan musik, kesenangan, dan kenangan yang luar biasa!</p>
+    <a href="#tickets" class="btn btn-primary btn-lg">Buy Tickets</a>
+  </div>
+
+  <!-- Event Information Section -->
+  <section class="event-info py-5" id="about">
+    <div class="container text-center">
+      <h2>Tentang Festival</h2>
+      <p class="lead">perayaan musik terbesar yang menghadirkan berbagai genre musik dari berbagai penjuru dunia. Festival ini akan berlangsung selama tiga hari penuh, menghadirkan penampilan memukau dari musisi lokal hingga internasional, dengan panggung yang megah dan tata cahaya spektakuler.
+        Selama festival, pengunjung akan dimanjakan dengan berbagai aktivitas, mulai dari konser musik live, pertunjukan seni visual, hingga bazar kuliner yang menyajikan makanan dan minuman dari berbagai daerah. Selain itu, festival ini juga menjadi ajang berkumpulnya para pecinta musik dan komunitas kreatif untuk berbagi inspirasi dan pengalaman.</p>
+      <img src="music.jpeg" class="img-fluid mt-4" alt="Festival image"> <!-- Gambar informasi event -->
+    </div>
+  </section>
+
+  <!-- Schedule Section -->
+  <section class="schedule py-5" id="schedule">
+    <div class="container">
+      <h2 class="text-center">Jadwal Event</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://yt3.googleusercontent.com/ytc/AIdro_kktsAavMzHEW8-8iJc-gGnBIDb8Tm-SmIkWjNmylrOLuo=s900-c-k-c0x00ffffff-no-rj" class="card-img-top" alt="Rock Legends">
+            <div class="card-body">
+              <h5 class="card-title">Hari 1 - Legenda Rock</h5>
+              <p class="card-text">Menampilkan pertunjukan dari band-band rock legendaris.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/indizone/2022/05/13/x0snJP4/10-penyanyi-pop-indonesia-paling-populer40.jpg" class="card-img-top" alt="Pop Paradise">
+            <div class="card-body">
+              <h5 class="card-title">Hari 2 - Pop Paradise</h5>
+              <p class="card-text">Artis pop papan atas naik ke atas panggung untuk malam yang penuh dengan lagu-lagu hits.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="data:image/jpeg;base64,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" class="card-img-top" alt="Electronic Vibes">
+            <div class="card-body">
+              <h5 class="card-title">Hari 3 - Jazz Vibes</h5>
+              <p class="card-text">Rasakan malam musik jazz yang tak terlupakan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tickets Section -->
+  <section class="tickets py-5" id="tickets">
+    <div class="container text-center">
+      <h2>Dapatkan Tiket Anda</h2>
+      <p class="lead">Tiket tersedia dalam beberapa tingkatan. Pilih tiket Anda hari ini!</p>
+      <img src="CAT.png" class="img-fluid mb-4" alt="Tickets banner"> <!-- Gambar tiket -->
+      <a href="#" class="btn btn-primary btn-lg">Buy Tickets</a>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Music Festival. All rights reserved.</p>
+      <p>Contact us at <a href="mailto:info@musicfestival.com">info@musicfestival.com</a></p>
+    </div>
+  </footer>
+
+  <!-- JavaScript and Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
